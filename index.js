@@ -8,7 +8,7 @@ const willCompile = process.argv.includes('compile') || process.argv.includes('b
 
 const clientEnd = path.resolve(__dirname, 'client');
 const backend = path.resolve(__dirname, 'backend');
-
+>>>>>>>>>>>>>>>>>>>>
 if(!willRun && !willCompile) throw new Error('Must specify run or compile as argument');
 if(willRun && !willCompile){
   let child = child_process.exec(`npm run start`,{cwd:backend},(err)=>{
