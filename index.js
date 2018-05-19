@@ -16,12 +16,7 @@ if(willRun && !willCompile){
   });
   child.stdout.pipe(process.stdout);
   child.stderr.pipe(process.stderr);
-} else if(willRun && willCompile){
-  console.log('Compiling front-end!');
-  let child1 = child_process.exec(`npm run build`,{cwd:clientEnd},(err, out)=>{
-    if(err) console.log(err);
-    console.log(out);
-    console.log('Compiling backend!');
+
     const child2 = child_process.exec(`npm run build`,{cwd:backend},(err2, out2)=>{
       if(err2) console.log(err2);
       console.log(out2);
