@@ -9,7 +9,7 @@ function cat(){
   return 2
 }
 function cat(){
-  return 2
+  return 22
 }
 function cat(){
   return 2
